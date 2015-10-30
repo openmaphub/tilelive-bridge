@@ -208,7 +208,7 @@ Bridge.getVector = function(source, map, z, x, y, callback) {
                 if (solid === false) return callback(err, pbfz, headers);
 
                 // Empty tiles are equivalent to no tile.
-                if (source._blank || !key) return callback(new Error('Tile does not exist'), null, headers);
+                //if (source._blank || !key) return callback(new Error('Tile does not exist'), null, headers);
 
                 pbfz.solid = key;
 
